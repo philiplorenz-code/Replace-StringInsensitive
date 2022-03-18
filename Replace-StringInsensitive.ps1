@@ -1,7 +1,3 @@
-$Content = Get-Content "./test.txt"
-$Content =  $Content -ireplace [regex]::Escape("schreibweise1"), "Schreibweise1"
-$Content | Set-Content "./test_cleaned.txt"
-
 function Replace-StringInsensitive {
     param (
         [String]$SourcePath,
